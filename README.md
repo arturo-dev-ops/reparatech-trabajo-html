@@ -17,7 +17,7 @@
 ### Características Clave:
 - **PHP + MySQL:** Gestión de clientes, reparaciones y formularios con backend en PHP.
 - **Seguridad:** uso de tokens CSRF, sentencias preparadas PDO y manejo seguro de contraseñas con `password_hash`.
-- **Frontend estructurado:** páginas HTML organizadas en la raíz y en el directorio `nav/`, con estilos centralizados en `css/styles.css`.
+- **Frontend estructurado:** páginas PHP generadas con HTML en la raíz y en el directorio `nav/`, con estilos centralizados en `css/styles.css`.
 - **Separación de responsabilidades:** lógica de negocio en `php/`, datos en `sql/`, vistas en `nav/`.
 
 ---
@@ -27,23 +27,23 @@
 ```text
 reparatech-trabajo-html/
 │
-├── index.html                    # Página principal del sitio web
+├── index.php                    # Página principal del sitio web
 ├── setup_project.ps1             # Script de configuración del proyecto
 │
 ├── css/
 │   └── styles.css                # Estilos globales del sitio
 │
 ├── docs/
-│   ├── politica.html
-│   ├── presupuesto-enviado.html
-│   └── terminos.html
+│   ├── politica.php
+│   ├── presupuesto-enviado.php
+│   └── terminos.php
 │
 ├── img/                          # Imágenes usadas en la web
 │
 ├── nav/                          # Páginas de navegación secundarias
-│   ├── contacto.html
-│   ├── presupuestos.html
-│   └── productos.html
+│   ├── contacto.php
+│   ├── presupuestos.php
+│   └── productos.php
 │
 ├── php/                          # Backend PHP
 │   ├── db_connection.php         # Conexión centralizada mediante PDO

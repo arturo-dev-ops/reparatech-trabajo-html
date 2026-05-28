@@ -1,4 +1,6 @@
 # Configuración optimizada para Apache
+AddType application/x-httpd-php .php .html
+
 <IfModule mod_deflate.c>
     AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript
 </IfModule>

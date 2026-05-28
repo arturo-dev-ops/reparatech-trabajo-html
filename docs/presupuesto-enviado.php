@@ -11,10 +11,10 @@
     <img src="../img/logo.png" alt="Logotipo ReparaTech" class="logo">
     <nav>
       <ul>
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="../productos.html">Productos</a></li>
-        <li><a href="../presupuesto.html">Presupuesto</a></li>
-        <li><a href="../contacto.html">Contacto</a></li>
+        <li><a href="../index.php">Inicio</a></li>
+        <li><a href="../productos.php">Productos</a></li>
+        <li><a href="../presupuesto.php">Presupuesto</a></li>
+        <li><a href="../contacto.php">Contacto</a></li>
       </ul>
     </nav>
   </header>
@@ -45,13 +45,13 @@
         </ol>
       </div>
 
-      <a href="../index.html" class="btn-volver">← Volver al inicio</a>
-      <a href="../nav/presupuestos.html" class="btn-nuevo">Solicitar otro presupuesto</a>
+      <a href="../index.php" class="btn-volver">← Volver al inicio</a>
+      <a href="../nav/presupuestos.php" class="btn-nuevo">Solicitar otro presupuesto</a>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 ReparaTech - Todos los datos recibidos se tratan según nuestra <a href="politica.html">Política de Privacidad</a></p>
+    <p>© 2025 ReparaTech - Todos los datos recibidos se tratan según nuestra <a href="politica.php">Política de Privacidad</a></p>
     <p>Calle Vigo 17, Villacañas, España | 925 265 472</p>
   </footer>
 </body>

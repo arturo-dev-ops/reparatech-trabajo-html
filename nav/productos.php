@@ -12,10 +12,10 @@
     <img src="../img/logo.png" alt="Logotipo Empresa" class="logo" >
     <nav>
       <ul>
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="productos.html" class="activo">Productos</a></li>
-        <li><a href="presupuestos.html">Presupuesto</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="../index.php">Inicio</a></li>
+        <li><a href="productos.php" class="activo">Productos</a></li>
+        <li><a href="presupuestos.php">Presupuesto</a></li>
+        <li><a href="contacto.php">Contacto</a></li>
       </ul>
     </nav>
   </header>

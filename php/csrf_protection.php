@@ -14,14 +14,5 @@ function validateCsrfToken($token) {
     return isset($_SESSION['csrf_token']) && hash_equals($_SESSION['csrf_token'], $token);
 }
 
-// Generar token para un formulario
+// Generar token para el formulario actual
 $csrfToken = generateCsrfToken();
-
-?>
-
-<!-- Ejemplo de formulario protegido contra CSRF -->
-<form method="POST" action="procesar_formulario.php">
-    <input type="hidden" name="csrf_token" value="<?php echo $csrfToken; ?>">
-    <input type="text" name="campo" placeholder="Escribe algo">
-    <button type="submit">Enviar</button>
-</form>

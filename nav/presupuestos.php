@@ -1,3 +1,4 @@
+<?php require '../php/csrf_protection.php'; ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -12,17 +13,19 @@
     <img src="../img/logo.png" alt="Logotipo Empresa" class="logo" >
     <nav>
       <ul>
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="productos.html">Productos</a></li>
-        <li><a href="presupuestos.html" class="activo">Presupuesto</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="../index.php">Inicio</a></li>
+        <li><a href="productos.php">Productos</a></li>
+        <li><a href="presupuestos.php" class="activo">Presupuesto</a></li>
+        <li><a href="contacto.php">Contacto</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <h2>Solicita tu presupuesto personalizado</h2>
-<form action="../docs/presupuesto-enviado.html" method="get">
+<form action="../php/procesar_formulario.php" method="post">
+  <input type="hidden" name="csrf_token" value="<?php echo htmlspecialchars($csrfToken, ENT_QUOTES, 'UTF-8'); ?>">
+
   <label for="nombre">Nombre completo:</label>
   <input type="text" id="nombre" name="nombre" required >
 

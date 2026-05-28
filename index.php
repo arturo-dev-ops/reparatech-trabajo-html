@@ -12,10 +12,10 @@
     <img src="img/logo.png" alt="Logotipo Empresa" class="logo" >
     <nav>
       <ul>
-        <li><a href="index.html" class="activo">Inicio</a></li>
-        <li><a href="nav/productos.html">Productos</a></li>
-        <li><a href="nav/presupuestos.html">Presupuesto</a></li>
-        <li><a href="nav/contacto.html">Contacto</a></li>
+        <li><a href="index.php" class="activo">Inicio</a></li>
+        <li><a href="nav/productos.php">Productos</a></li>
+        <li><a href="nav/presupuestos.php">Presupuesto</a></li>
+        <li><a href="nav/contacto.php">Contacto</a></li>
       </ul>
     </nav>
   </header>
@@ -55,13 +55,13 @@
     <p>Dirección: Calle Vigo 17, Villacañas, España</p>
     <p>
       Síguenos en
-      <a href="index.html" target="_self">Facebook</a> |
-      <a href="index.html" target="_self">Twitter</a> |
-      <a href="index.html" target="_self">Instagram</a>
+      <a href="index.php" target="_self">Facebook</a> |
+      <a href="index.php" target="_self">Twitter</a> |
+      <a href="index.php" target="_self">Instagram</a>
     </p>
     <p>
-      <a href="docs/politica.html">Política de privacidad</a> |
-       <a href="docs/terminos.html">Términos y condiciones</a>
+      <a href="docs/politica.php">Política de privacidad</a> |
+       <a href="docs/terminos.php">Términos y condiciones</a>
     </p>
   </footer>
 </body>
