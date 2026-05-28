@@ -51,7 +51,7 @@
   </main>
 
   <footer>
-    <p>© 2025 ReparaTech - Todos los datos recibidos se tratan según nuestra <a href="politica.php">Política de Privacidad</a></p>
+    <p>© 2026 ReparaTech - Todos los datos recibidos se tratan según nuestra <a href="politica.php">Política de Privacidad</a></p>
     <p>Calle Vigo 17, Villacañas, España | 925 265 472</p>
   </footer>
 </body>

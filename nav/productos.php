@@ -53,7 +53,7 @@
   </main>
 
   <footer>
-    <p>© 2025 ReparaTech - Todos los derechos reservados</p>
+    <p>© 2026 ReparaTech - Todos los derechos reservados</p>
     <p>Dirección: Calle Vigo 17, Villacañas, España</p>
   </footer>
 </body>
