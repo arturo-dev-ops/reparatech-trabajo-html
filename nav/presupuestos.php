@@ -1,4 +1,4 @@
-<?php require '../php/csrf_protection.php'; ?>
+<?php require __DIR__ . '/../php/csrf_protection.php'; ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>

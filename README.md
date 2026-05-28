@@ -28,7 +28,6 @@
 reparatech-trabajo-html/
 │
 ├── index.php                    # Página principal del sitio web
-├── setup_project.ps1             # Script de configuración del proyecto
 │
 ├── css/
 │   └── styles.css                # Estilos globales del sitio

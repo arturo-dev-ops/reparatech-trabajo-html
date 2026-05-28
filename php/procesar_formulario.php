@@ -1,6 +1,6 @@
 <?php
 
-require 'csrf_protection.php';
+require __DIR__ . '/csrf_protection.php';
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     header('Location: ../nav/presupuestos.php');

@@ -1,5 +1,5 @@
 <?php
-require 'business_logic.php';
+require __DIR__ . '/business_logic.php';
 $clientes = obtenerClientes();
 ?>
 
