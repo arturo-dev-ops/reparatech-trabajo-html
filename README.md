@@ -1,3 +1,4 @@
+-- Active: 1777320170376@@127.0.0.1@3306
 # ReparaTech - Gestión de Reparaciones y Mantenimiento Electrónico
 
 **Aplicación Full Stack con infraestructura optimizada (PHP, MySQL y Apache)**
@@ -17,7 +18,8 @@
 ### Características Clave:
 
 - **PHP + MySQL:** Gestión de clientes, reparaciones y formularios con backend en PHP.
-- **Seguridad:** sentencias preparadas PDO y manejo seguro de contraseñas con `password_hash`.
+- **Seguridad:** sentencias preparadas PDO para consultas parametrizadas.
+- **Nota:** El proyecto no incluye sistema de usuarios ni almacenamiento de contraseñas; se eliminaron tokens CSRF y ejemplos de hashing.
 - **Frontend estructurado:** páginas PHP generadas con HTML en la raíz y en el directorio `nav/`, con estilos centralizados en `css/styles.css`.
 - **Separación de responsabilidades:** lógica de negocio en `php/`, datos en `sql/`, vistas en `nav/`.
 
