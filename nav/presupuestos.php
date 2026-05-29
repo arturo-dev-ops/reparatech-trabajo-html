@@ -1,4 +1,3 @@
-<?php require __DIR__ . '/../php/csrf_protection.php'; ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -24,7 +23,6 @@
   <main>
     <h2>Solicita tu presupuesto personalizado</h2>
 <form action="../php/procesar_formulario.php" method="post">
-  <input type="hidden" name="csrf_token" value="<?php echo htmlspecialchars($csrfToken, ENT_QUOTES, 'UTF-8'); ?>">
 
   <label for="nombre">Nombre completo:</label>
   <input type="text" id="nombre" name="nombre" required >

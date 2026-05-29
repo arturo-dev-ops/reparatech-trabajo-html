@@ -1,7 +1,5 @@
 <?php
 
-require __DIR__ . '/csrf_protection.php';
-
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     header('Location: ../nav/presupuestos.php');
     exit;
@@ -14,10 +12,6 @@ $telefono = trim($_POST['telefono'] ?? '');
 $dispositivo = trim($_POST['dispositivo'] ?? '');
 $descripcion = trim($_POST['descripcion'] ?? '');
 $acepto = isset($_POST['acepto']);
-
-if (!validateCsrfToken($_POST['csrf_token'] ?? '')) {
-    $errors[] = 'Token CSRF inválido.';
-}
 
 if ($nombre === '') {
     $errors[] = 'El nombre es obligatorio.';

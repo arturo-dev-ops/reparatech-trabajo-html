@@ -15,8 +15,9 @@
 **ReparaTech** es una solución web responsive orientada a la gestión y administración de un taller de reparación técnica de dispositivos electrónicos. El proyecto combina frontend HTML/CSS con backend PHP y MySQL, aplicando buenas prácticas de seguridad y separación de responsabilidades.
 
 ### Características Clave:
+
 - **PHP + MySQL:** Gestión de clientes, reparaciones y formularios con backend en PHP.
-- **Seguridad:** uso de tokens CSRF, sentencias preparadas PDO y manejo seguro de contraseñas con `password_hash`.
+- **Seguridad:** sentencias preparadas PDO y manejo seguro de contraseñas con `password_hash`.
 - **Frontend estructurado:** páginas PHP generadas con HTML en la raíz y en el directorio `nav/`, con estilos centralizados en `css/styles.css`.
 - **Separación de responsabilidades:** lógica de negocio en `php/`, datos en `sql/`, vistas en `nav/`.
 
@@ -46,8 +47,6 @@ reparatech-trabajo-html/
 │
 ├── php/                          # Backend PHP
 │   ├── db_connection.php         # Conexión centralizada mediante PDO
-│   ├── password_management.php   # Cifrado y verificación de credenciales
-│   ├── csrf_protection.php       # Generación y validación de tokens CSRF
 │   ├── business_logic.php        # Controlador y procesado de la lógica de negocio
 │   ├── clientes_view.php         # Vista dinámica de administración de clientes
 │   ├── procesar_formulario.php   # Procesamiento de envíos de formularios
