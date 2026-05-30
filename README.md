@@ -1,7 +1,8 @@
 -- Active: 1777320170376@@127.0.0.1@3306
-# ReparaTech - Gestión de Reparaciones y Mantenimiento Electrónico
 
-**Aplicación Full Stack con infraestructura optimizada (PHP, MySQL y Apache)**
+# ReparaTech - Plataforma Web de Reparación de Electrónica
+
+**Aplicación web responsive - 100% HTML/CSS**
 
 ---
 
@@ -13,15 +14,24 @@
 
 ## 📖 Descripción del Proyecto
 
-**ReparaTech** es una solución web responsive orientada a la gestión y administración de un taller de reparación técnica de dispositivos electrónicos. El proyecto combina frontend HTML/CSS con backend PHP y MySQL, aplicando buenas prácticas de seguridad y separación de responsabilidades.
+**ReparaTech** es una solución web responsive diseñada para un taller de reparación técnica de dispositivos electrónicos. Proporciona una plataforma clara y profesional donde los clientes pueden:
+
+- 📱 Conocer los servicios de reparación y mantenimiento
+- 💻 Ver el catálogo de servicios disponibles
+- 📝 Solicitar presupuestos personalizados mediante formulario
+- 📞 Obtener información de contacto
+- 📋 Revisar políticas de privacidad y términos de servicio
 
 ### Características Clave:
 
-- **PHP + MySQL:** Gestión de clientes, reparaciones y formularios con backend en PHP.
-- **Seguridad:** sentencias preparadas PDO para consultas parametrizadas.
-- **Nota:** El proyecto no incluye sistema de usuarios ni almacenamiento de contraseñas; se eliminaron tokens CSRF y ejemplos de hashing.
-- **Frontend estructurado:** páginas PHP generadas con HTML en la raíz y en el directorio `nav/`, con estilos centralizados en `css/styles.css`.
-- **Separación de responsabilidades:** lógica de negocio en `php/`, datos en `sql/`, vistas en `nav/`.
+- **100% HTML/CSS:** Sitio web estático, rápido y seguro
+- **Responsive:** Adaptado perfectamente a dispositivos móviles, tablets y escritorio
+- **Formulario de solicitud:** Validación HTML5 con redirección a página de confirmación
+- **Diseño profesional:** Interfaz moderna con colores corporativos y navegación intuitiva
+- **Página de confirmación:** Mensaje de éxito visual y atractivo cuando se envía una solicitud
+- **SEO amigable:** Estructura semántica correcta con etiquetas HTML5
+- **Accesibilidad:** Etiquetas alt en imágenes y estructura lógica
+- **Sin dependencias externas:** No requiere frameworks ni librerías
 
 ---
 
@@ -30,33 +40,27 @@
 ```text
 reparatech-trabajo-html/
 │
-├── index.php                    # Página principal del sitio web
+├── index.html                    # Página principal del sitio web
+├── procesar_formulario.html      # Página de confirmación de solicitud
 │
 ├── css/
-│   └── styles.css                # Estilos globales del sitio
+│   └── styles.css                # Estilos centralizados (responsive)
 │
 ├── docs/
-│   ├── politica.php
-│   ├── presupuesto-enviado.php
-│   └── terminos.php
+│   ├── politica.html             # Política de privacidad
+│   └── terminos.html             # Términos y condiciones
 │
-├── img/                          # Imágenes usadas en la web
+├── img/                          # Recursos de imagen
+│   ├── logo.ico                  # Favicon
+│   ├── logo.png                  # Logotipo corporativo
+│   ├── mapa-sitio.png            # Mapa de ubicación
+│   ├── reparacion-*.png          # Imágenes de servicios (4 archivos)
 │
-├── nav/                          # Páginas de navegación secundarias
-│   ├── contacto.php
-│   ├── presupuestos.php
-│   └── productos.php
+├── nav/                          # Páginas de navegación
+│   ├── contacto.html             # Información de contacto
+│   ├── presupuestos.html         # Formulario de solicitud
+│   └── productos.html            # Catálogo de servicios
 │
-├── php/                          # Backend PHP
-│   ├── db_connection.php         # Conexión centralizada mediante PDO
-│   ├── business_logic.php        # Controlador y procesado de la lógica de negocio
-│   ├── clientes_view.php         # Vista dinámica de administración de clientes
-│   ├── procesar_formulario.php   # Procesamiento de envíos de formularios
-│   └── php.ini                   # Ajustes del entorno de ejecución de PHP
-│
-├── sql/
-│   └── schema.sql                # Definición de tablas, relaciones y restricciones
-│
-├── .htaccess                     # Directivas de Apache para caché y optimización
-└── README.md
+├── README.md                     # Este archivo
+└── VERIFICACION.txt              # Reporte de verificación del proyecto
 ```

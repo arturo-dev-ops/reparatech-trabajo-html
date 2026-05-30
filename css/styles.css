@@ -3,7 +3,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -21,7 +21,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
@@ -41,7 +41,9 @@ nav ul li a {
   padding: 0.5rem 1rem;
   border-radius: 4px;
   font-weight: 600;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 nav ul li a:hover,
@@ -57,7 +59,7 @@ main {
   padding: 2rem 3rem;
   margin: 2rem auto;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 /* Secciones */
@@ -65,13 +67,16 @@ section {
   margin-bottom: 2rem;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: #003366;
   margin-bottom: 0.75rem;
   font-weight: 700;
 }
 
-p, ul {
+p,
+ul {
   margin-bottom: 1rem;
   color: #4a4a4a;
 }
@@ -93,7 +98,7 @@ ul {
   padding: 1rem;
   background-color: #f9fbff;
   text-align: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease;
 }
 
@@ -205,7 +210,6 @@ footer {
   }
 }
 
-
 /* estilos de fichero politica de privacidad */
 /* estilos de fichero terminos y condiciones */
 
@@ -275,5 +279,244 @@ main a:hover {
   }
 }
 
+/* ---- Página de confirmación (Reparación solicitada) ---- */
+
+.confirmacion-exito {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 51, 102, 0.1);
+}
+
+.contenedor-confirmacion {
+  text-align: center;
+}
+
+.icono-exito {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  animation: bounce 0.6s ease-in-out;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.confirmacion-exito h1 {
+  color: #00aa44;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.confirmacion-exito .intro {
+  font-size: 1.1rem;
+  color: #555555;
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+
+.mensaje-exito h2 {
+  color: #003366;
+  font-size: 1.5rem;
+  border-bottom: 3px solid #66a3ff;
+  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.resumen-datos {
+  list-style: none;
+  text-align: left;
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  background-color: #f0f8ff;
+  border-left: 4px solid #66a3ff;
+  border-radius: 8px;
+}
+
+.resumen-datos li {
+  padding: 0.8rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e0e8f0;
+}
+
+.resumen-datos li:last-child {
+  border-bottom: none;
+}
+
+.resumen-datos strong {
+  color: #003366;
+  min-width: 150px;
+}
+
+.badge-estado {
+  background-color: #00aa44;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.datos-contacto {
+  background-color: #e8f4ff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+  text-align: left;
+}
+
+.datos-contacto h3 {
+  color: #003366;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.datos-contacto p {
+  margin: 0.8rem 0;
+  color: #555555;
+  font-size: 1rem;
+}
+
+.proximo-paso {
+  margin: 2rem 0;
+  text-align: left;
+}
+
+.proximo-paso h3 {
+  color: #003366;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.pasos-proceso {
+  list-style: none;
+  counter-reset: pasos;
+  padding: 0;
+}
+
+.pasos-proceso li {
+  counter-increment: pasos;
+  padding: 1rem 1rem 1rem 3.5rem;
+  margin-bottom: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  position: relative;
+  border-left: 4px solid #66a3ff;
+}
+
+.pasos-proceso li::before {
+  content: counter(pasos);
+  position: absolute;
+  left: 0.8rem;
+  top: 0.8rem;
+  background-color: #66a3ff;
+  color: white;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.pasos-proceso li strong {
+  color: #003366;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.acciones {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.btn-volver,
+.btn-nuevo {
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+  min-width: 220px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn-volver {
+  background-color: #f0f4f8;
+  color: #003366;
+  border: 2px solid #003366;
+}
+
+.btn-volver:hover {
+  background-color: #003366;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 51, 102, 0.2);
+}
+
+.btn-nuevo {
+  background-color: #00aa44;
+  color: white;
+  border: 2px solid #00aa44;
+}
+
+.btn-nuevo:hover {
+  background-color: #008a38;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 170, 68, 0.2);
+}
+
+/* Responsive para confirmación */
+@media (max-width: 768px) {
+  .confirmacion-exito {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .confirmacion-exito h1 {
+    font-size: 1.8rem;
+  }
+
+  .acciones {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .btn-volver,
+  .btn-nuevo {
+    min-width: 100%;
+  }
+
+  .resumen-datos li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .icono-exito {
+    font-size: 3rem;
+  }
+}
 
 /* Fin de styles.css del proyecto ReparaTech */
