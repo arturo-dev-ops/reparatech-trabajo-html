@@ -71,7 +71,8 @@ form button {
   text-align: center;
 }
 
-.btn-volver, .btn-nuevo {
+.btn-volver,
+.btn-nuevo {
   padding: 1rem 2rem;
   border-radius: 8px;
   text-decoration: none;
