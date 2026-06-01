@@ -20,7 +20,7 @@
 - 📞 Obtener información de contacto
 - 📋 Revisar políticas de privacidad y términos de servicio
 
-### Características Clave:
+### Características Clave
 
 - **100% HTML/CSS:** Sitio web estático, rápido y seguro
 - **Responsive:** Adaptado perfectamente a dispositivos móviles, tablets y escritorio
