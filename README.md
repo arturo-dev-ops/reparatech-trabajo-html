@@ -1,8 +1,6 @@
--- Active: 1777320170376@@127.0.0.1@3306
-
 # ReparaTech - Plataforma Web de Reparación de Electrónica
 
-**Aplicación web responsive - 100% HTML/CSS**
+## Aplicación web responsive - 100% HTML/CSS
 
 ---
 
